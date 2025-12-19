@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page - The STUPIDEST Wiki</title>
+    <style>
+        body {
+            font-family: 'serif', 'Times New Roman', Times, serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            display: flex;
+        }
+
+        /* Navigation Sidebar */
+        #sidebar {
+            width: 160px;
+            padding: 20px 10px;
+            font-size: 0.8em;
+        }
+        #sidebar strong { display: block; margin-top: 15px; border-bottom: 1px solid #aaa; }
+        #sidebar ul { list-style: none; padding: 0; margin: 5px 0; }
+        #sidebar a { text-decoration: none; color: #0000ee; }
+        #sidebar a:hover { text-decoration: underline; }
+
+        /* Main Body */
+        #content-wrapper {
+            flex-grow: 1;
+            background-color: #ffffff;
+            border-left: 1px solid #aaaaaa;
+            padding: 10px 25px;
+            min-height: 100vh;
+        }
+
+        /* Top Header Area */
+        #top-meta {
+            text-align: right;
+            font-size: 0.75em;
+            margin-bottom: 10px;
+        }
+
+        /* Welcome Box */
+        .welcome-box {
+            background-color: #fffaf0;
+            border: 1px solid #f2e0ce;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .welcome-text { flex-grow: 1; }
+        .welcome-text h1 { border: none; margin: 0; font-size: 1.8em; }
+
+        /* Layout Grid for Main Page */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .section-box {
+            border: 1px solid #c8d8ff;
+            background: #fcfcff;
+        }
+
+        .section-header {
+            background: #cedff2;
+            padding: 5px 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+            border-bottom: 1px solid #c8d8ff;
+        }
+
+        .section-content {
+            padding: 10px;
+            font-size: 0.9em;
+        }
+
+        /* Typography */
+        h1 { border-bottom: 1px solid #aaaaaa; margin-top: 5px; }
+        .red-link { color: #ba0000 !important; } /* The classic "page doesn't exist" color */
+
+    </style>
+</head>
+<body>
+
+    <nav id="sidebar">
+        <div style="text-align:center; font-weight:bold; font-size:1.2em; color:#555;">
+            STUPID<br>WIKI
+        </div>
+        <strong>Navigation</strong>
+        <ul>
+            <li><a href="#">Main Page</a></li>
+            <li><a href="#">Recent changes</a></li>
+            <li><a href="#" class="red-link">Stupidest User</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+        <strong>Community</strong>
+        <ul>
+            <li><a href="#">Village Pump</a></li>
+            <li><a href="#">Admin Noticeboard</a></li>
+            <li><a href="#">Discord</a></li>
+        </ul>
+    </nav>
+
+    <div id="content-wrapper">
+        <div id="top-meta">
+            Not logged in | <a href="#">Talk</a> | <a href="#">Contributions</a> | <a href="#">Create account</a> | <a href="#">Log in</a>
+        </div>
+
+        <div class="welcome-box">
+            <div class="welcome-text">
+                <h1>Welcome to The STUPIDEST Wiki</h1>
+                <p>The encyclopedia of things that don't need to be known. Currently hosting <b>3.5 articles</b>.</p>
+            </div>
+            <div style="text-align:right; font-size:0.8em;">
+                <a href="#">How to be stupid</a><br>
+                <a href="#">Rules</a>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="left-col">
+                <div class="section-box">
+                    <div class="section-header">Today's Featured Nonsense</div>
+                    <div class="section-content">
+                        <img src="https://via.placeholder.com/120x90" style="float:left; margin:0 10px 5px 0; border:1px solid #ccc;">
+                        <p><b><a href="#">The Left Sock Paradox</a></b> is a phenomenon where exactly one sock from every pair disappears into a trans-dimensional rift located inside most Whirlpool dryers.</p>
+                        <p>First discovered in 1994 by a man who had to go to work wearing one black sock and one with rubber ducks on it, the paradox has baffled scientists who have much better things to do. (<b><a href="#">Read more...</a></b>)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-col">
+                <div class="section-box">
+                    <div class="section-header">Did you know...</div>
+                    <div class="section-content">
+                        <ul>
+                            <li>...that <b><a href="#" class="red-link">Water</a></b> is actually just wet air?</li>
+                            <li>...that if you yell at a <b><a href="#">Potato</a></b> for 40 hours, it still won't cook?</li>
+                            <li>...that the word "Stupid" is spelled with six letters, but we only used five in our <a href="#">last logo</a>?</li>
+                            <li>...that <a href="#">this wiki</a> was built in 2025 but looks like it's from 2004?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section-box" style="margin-top:20px; border-color:#ffcc66;">
+                    <div class="section-header" style="background:#ffe4b5; border-color:#ffcc66;">Stupid News</div>
+                    <div class="section-content">
+                        <b>Dec 19:</b> Local man tries to "download more RAM," ends up downloading a picture of a <b><a href="#">Ham Sandwich</a></b> instead.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="border-bottom: 1px solid #aaa; margin-top:40px;">Community portal</h2>
+        <p>Want to help? You can start by <b><a href="#" class="red-link">writing an article about why grass is green</a></b> (hint: it's paint).</p>
+    </div>
+
+</body>
+</html>
